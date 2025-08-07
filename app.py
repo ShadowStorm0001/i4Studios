@@ -76,6 +76,7 @@ def handle_reset_request():
     
     return jsonify({
         "status": "success",
+        "code": code,  # This is the new line that sends code to client
         "expires_in": TOKEN_EXPIRY
     })
 
